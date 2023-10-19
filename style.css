@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Poppins:ital,wght@0,300;0,400;0,600;1,400;1,900&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Gabarito', cursive;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Young Serif', serif; */
+    background: #24384d;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+h3{
+    color: #ffffff;
+    font-size: 2rem;
+    padding-bottom: 0.7rem;
+    letter-spacing: 1px;
+}
+
+h5{
+    color: #ffffff;
+    font-size: 1rem;
+    padding-bottom: 3rem;
+}
+
+.card{
+    background-color: #ffffff;
+    width: 600px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 30px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0,0.1);
+    position: relative;
+}
+
+#customer-img{
+    width: 150px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+#customer-img img{
+    background-position: center;
+    background-size: cover;
+}
+
+.review{
+    padding-bottom: 1rem;
+}
+
+.star{
+    color: #FF5733;
+    font-size: 0.8rem;
+}
+
+.prevBtn, .nextBtn{
+    color: #FF5733;
+    font-size: 1.8rem;
+    width: 45px;
+    height: 45px;
+    max-width: 45px;
+    max-height: 45px;
+    line-height: 45px;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: #FF5733;
+    color: #ffffff;
+    text-align: center;
+}
+
+.prevBtn{
+    position: absolute;
+    top: 10%;
+    right: 14%;
+}
+.nextBtn{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
+@media only screen and (max-width: 624px){
+    .card{
+        width: 90%;
+        padding-bottom: 20px;
+    }
+    .prevBtn{
+        position: absolute;
+        top: 10%;
+        right: 16%;
+    }
+}
